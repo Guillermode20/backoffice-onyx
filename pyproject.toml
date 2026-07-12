@@ -96,7 +96,7 @@ backend = [
     "pypdfium2==5.9.0",
     "python-dotenv==1.2.2",
     "pywikibot==9.0.0",
-    "redis==5.0.8",
+    "redis==8.0.1",
     "requests==2.33.0",
     "requests-oauthlib==2.0.0",
     "simple-salesforce==1.12.6",
