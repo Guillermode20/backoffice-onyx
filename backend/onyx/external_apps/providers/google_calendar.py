@@ -83,7 +83,7 @@ class GoogleCalendarProvider(GoogleOAuthProvider, OnyxManagedExtApp):
         scope="https://www.googleapis.com/auth/calendar",
         upstream_url_patterns=["https://www\\.googleapis\\.com/calendar/.*"],
         description=(
-            "Read and create events on your Google Calendar from inside Onyx Craft."
+            "Read and create events on your Google Calendar from inside BackOffice Craft."
         ),
         google_api_name="Google Calendar API",
         endpoint_catalog=_ENDPOINTS,

@@ -105,7 +105,7 @@ export function InputBar({
         <ComposerInput
           value={value}
           onChangeText={onChangeText}
-          placeholder="Message Onyx…"
+          placeholder="Message BackOffice…"
           placeholderClassName="text-text-02"
           multiline
           onContentSizeChange={(event) =>

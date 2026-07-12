@@ -175,7 +175,7 @@ export default function NewTeamModal() {
               width="full"
               rightIcon={SvgArrowRight}
             >
-              Try Onyx while waiting
+              Try BackOffice while waiting
             </Button>
           ) : (
             <>

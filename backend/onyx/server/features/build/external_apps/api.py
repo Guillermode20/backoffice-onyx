@@ -161,7 +161,7 @@ def create_built_in_external_app(
     if MULTI_TENANT and get_onyx_managed_provider(request.app_type) is not None:
         raise OnyxError(
             OnyxErrorCode.INVALID_INPUT,
-            "Built-in apps are provided by Onyx; use PATCH /admin/apps/{id} to "
+            "Built-in apps are provided by BackOffice; use PATCH /admin/apps/{id} to "
             "enable/disable them or set action policies.",
         )
 
@@ -397,7 +397,7 @@ def delete_external_app_admin(
     if MULTI_TENANT and get_onyx_managed_provider(app.app_type) is not None:
         raise OnyxError(
             OnyxErrorCode.INVALID_INPUT,
-            "Built-in apps are provided by Onyx and cannot be deleted.",
+            "Built-in apps are provided by BackOffice and cannot be deleted.",
         )
     affected = affected_user_ids_for_skill(app.skill, db_session)
 

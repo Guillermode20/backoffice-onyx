@@ -9,7 +9,7 @@ async function fetchAppName(): Promise<string> {
       return enterprise.application_name.trim();
     }
   }
-  return "Onyx";
+  return "BackOffice";
 }
 
 export async function generateFaviconMetadata(): Promise<Metadata["icons"]> {

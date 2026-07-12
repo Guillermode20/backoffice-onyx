@@ -185,7 +185,7 @@ async def _register_guild(
             "Guild %s is already registered to tenant %s", guild_id, existing_tenant
         )
         raise RegistrationError(
-            "This server is already registered.\n\nOnyxBot can only connect one Discord server to one Onyx workspace."
+            "This server is already registered.\n\nBackOfficeBot can only connect one Discord server to one BackOffice workspace."
         )
 
     context_token = CURRENT_TENANT_ID_CONTEXTVAR.set(tenant_id)

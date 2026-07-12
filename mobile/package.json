@@ -2,6 +2,7 @@
   "name": "mobile",
   "main": "expo-router/entry",
   "version": "1.0.0",
+  "description": "A standalone React Native app for BackOffice",
   "dependencies": {
     "@expo-google-fonts/dm-mono": "^0.4.2",
     "@expo-google-fonts/hanken-grotesk": "^0.4.3",

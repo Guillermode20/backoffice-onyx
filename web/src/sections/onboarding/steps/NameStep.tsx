@@ -49,7 +49,7 @@ const NameStep = React.memo(
         <InputHorizontal
           responsive
           icon={SvgUser}
-          title="What should Onyx call you?"
+          title="What should BackOffice call you?"
           description="We will display this name in the app."
         >
           <InputTypeIn

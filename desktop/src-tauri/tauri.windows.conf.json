@@ -3,7 +3,7 @@
   "app": {
     "windows": [
       {
-        "title": "Onyx",
+        "title": "BackOffice",
         "label": "main",
         "url": "index.html",
         "width": 1200,

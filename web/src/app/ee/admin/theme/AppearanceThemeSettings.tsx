@@ -247,7 +247,7 @@ export const AppearanceThemeSettings = forwardRef<
               />
             </FormField.Control>
             <FormField.Description>
-              This name will show across the app and replace "Onyx" in the UI.
+              This name will show across the app and replace "BackOffice" in the UI.
             </FormField.Description>
             <FormField.Message
               messages={{ error: errors.application_name as string }}
@@ -487,7 +487,7 @@ export const AppearanceThemeSettings = forwardRef<
               />
             </FormField.Control>
             <FormField.Description>
-              Add a custom help link in the user menu in addition to the Onyx
+              Add a custom help link in the user menu in addition to the BackOffice
               documentation.
             </FormField.Description>
             <FormField.Message
@@ -517,19 +517,19 @@ export const AppearanceThemeSettings = forwardRef<
 
       <Disabled
         disabled={!enterpriseTier}
-        tooltip="Hiding Onyx branding is an Enterprise Plan feature."
+        tooltip="Hiding BackOffice branding is an Enterprise Plan feature."
       >
         <FormField state="idle" className="gap-0">
           <div className="flex justify-between items-center">
             <FormField.Label>
-              Hide Onyx Branding
+              Hide BackOffice Branding
               {!enterpriseTier && (
                 <Tag {...planTagProps("enterprise")} size="sm" />
               )}
             </FormField.Label>
             <FormField.Control>
               <Switch
-                aria-label="Hide Onyx Branding"
+                aria-label="Hide BackOffice Branding"
                 data-label="hide-onyx-branding-toggle"
                 checked={values.hide_onyx_branding}
                 onCheckedChange={(checked) =>
@@ -540,8 +540,7 @@ export const AppearanceThemeSettings = forwardRef<
             </FormField.Control>
           </div>
           <FormField.Description>
-            Remove &ldquo;powered by Onyx&rdquo; and other Onyx branding
-            presence in the app.
+            Remove &ldquo;powered by BackOffice&rdquo; and other BackOffice branding
           </FormField.Description>
         </FormField>
       </Disabled>

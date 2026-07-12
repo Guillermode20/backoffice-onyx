@@ -137,7 +137,7 @@ class GoogleDriveProvider(GoogleOAuthProvider, OnyxManagedExtApp):
         ],
         description=(
             "Search, read, create, and edit files and Google Docs in your "
-            "Google Drive inside Onyx Craft."
+            "Google Drive inside BackOffice Craft."
         ),
         google_api_name="Google Drive API and Google Docs API",
         endpoint_catalog=_ENDPOINTS,

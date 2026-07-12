@@ -305,8 +305,8 @@ export default function AdminSidebar() {
                   icon={icon}
                   tooltip={markdown(
                     requiredTier === Tier.ENTERPRISE
-                      ? "This feature is available on the [Enterprise version of Onyx](/admin/billing) only."
-                      : "This feature is available on the [Business or Enterprise version of Onyx](/admin/billing) only."
+                      ? "This feature is available on the [Enterprise version of BackOffice](/admin/billing) only."
+                      : "This feature is available on the [Business or Enterprise version of BackOffice](/admin/billing) only."
                   )}
                 >
                   {name}

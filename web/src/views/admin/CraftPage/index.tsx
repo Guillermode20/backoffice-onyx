@@ -153,7 +153,7 @@ export default function CraftPage() {
     <SettingsLayouts.Header
       icon={ADMIN_ROUTES.CRAFT.icon}
       title={ADMIN_ROUTES.CRAFT.title}
-      description="Control who can use Craft, Onyx's agentic app builder."
+      description="Control who can use Craft, BackOffice's agentic app builder."
       divider
     />
   );
@@ -187,7 +187,7 @@ export default function CraftPage() {
           <IllustrationContent
             illustration={SvgNoResult}
             title="Craft isn't available on this deployment"
-            description="Craft is enabled per deployment by Onyx. Contact your Onyx representative to get access."
+            description="Craft is enabled per deployment by BackOffice. Contact your BackOffice representative to get access."
           />
         </SettingsLayouts.Body>
       </SettingsLayouts.Root>

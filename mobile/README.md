@@ -1,6 +1,6 @@
-# Onyx Mobile (Expo)
+# BackOffice Mobile (Expo)
 
-A standalone React Native app for Onyx, under `mobile/` — independent of `web/` (its own
+A standalone React Native app for BackOffice, under `mobile/` — independent of `web/` (its own
 dependencies, lockfile, and tooling). Scaffolded with `create-expo-app` (Expo Router template).
 
 ## Stack
@@ -70,5 +70,5 @@ Not wired yet. Tokens, theme, and shared utilities will be imported from the `@o
 package once it lands (see the `Subash-Mohan/shared-package-mobile-web` branch). Nothing is
 vendored locally — the package owns the Style Dictionary build and the design tokens.
 
-> The splash logo (`assets/images/splash-icon.png`) is a placeholder on the Onyx-blue background
-> (`#208AEF`) — replace it with the real Onyx logo art.
+> The splash logo (`assets/images/splash-icon.png`) is a placeholder on the BackOffice-blue background
+> (`#208AEF`) — replace it with the real BackOffice logo art.

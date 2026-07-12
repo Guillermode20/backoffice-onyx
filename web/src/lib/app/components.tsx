@@ -8,14 +8,34 @@ import {
 import { cn } from "@opal/utils";
 import Text from "@/refresh-components/texts/Text";
 import Truncated from "@/refresh-components/texts/Truncated";
-import { SvgOnyxLogo, SvgOnyxLogoTyped } from "@opal/logos";
+import { SvgOnyxLogo } from "@opal/logos";
+
+function BackOfficeWordmark({
+  size,
+  className,
+}: {
+  size: number;
+  className?: string;
+}) {
+  return (
+    <div
+      className={cn("flex flex-row items-center shrink-0", className)}
+      style={{ gap: size * (5 / 16) }}
+    >
+      <SvgOnyxLogo size={size} />
+      <Text headingH3 nowrap>
+        BackOffice
+      </Text>
+    </div>
+  );
+}
 
 export interface LogoProps {
   folded?: boolean;
   size?: number;
   className?: string;
-  // Always render the real Onyx logo, ignoring enterprise white-label settings
-  // (custom logo / application name). Used by Onyx-branded surfaces like Craft.
+  // Always render the BackOffice logo, ignoring enterprise white-label settings
+  // (custom logo / application name). Used by BackOffice-branded surfaces like Craft.
   onyxBranded?: boolean;
 }
 
@@ -29,7 +49,7 @@ export function Logo({ folded, size, className, onyxBranded }: LogoProps) {
     return folded ? (
       <SvgOnyxLogo size={resolvedSize} className={cn("shrink-0", className)} />
     ) : (
-      <SvgOnyxLogoTyped size={resolvedSize} className={className} />
+      <BackOfficeWordmark size={resolvedSize} className={className} />
     );
   }
 
@@ -73,7 +93,7 @@ export function Logo({ folded, size, className, onyxBranded }: LogoProps) {
                   className={"line-clamp-1 truncate"}
                   nowrap
                 >
-                  Powered by Onyx
+                  Powered by BackOffice
                 </Text>
               )}
           </div>
@@ -98,6 +118,6 @@ export function Logo({ folded, size, className, onyxBranded }: LogoProps) {
   ) : folded ? (
     <SvgOnyxLogo size={resolvedSize} className={cn("shrink-0", className)} />
   ) : (
-    <SvgOnyxLogoTyped size={resolvedSize} className={className} />
+    <BackOfficeWordmark size={resolvedSize} className={className} />
   );
 }

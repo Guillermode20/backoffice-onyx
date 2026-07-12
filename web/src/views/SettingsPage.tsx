@@ -1034,7 +1034,7 @@ function ChatPreferencesSettings() {
         <Card>
           <InputHorizontal
             title="Default Model"
-            description="This model will be used by Onyx by default in your chats."
+            description="This model will be used by BackOffice by default in your chats."
             withLabel
           >
             <ModelSelector
@@ -1169,7 +1169,7 @@ function ChatPreferencesSettings() {
         <Card>
           <InputHorizontal
             title="Reference Stored Memories"
-            description="Let Onyx reference stored memories in chats."
+            description="Let BackOffice reference stored memories in chats."
             withLabel
           >
             <Switch
@@ -1182,7 +1182,7 @@ function ChatPreferencesSettings() {
           </InputHorizontal>
           <InputHorizontal
             title="Update Memories"
-            description="Let Onyx generate and update stored memories."
+            description="Let BackOffice generate and update stored memories."
             withLabel
           >
             <Switch
@@ -1538,7 +1538,7 @@ function AccountsAccessSettings() {
         >
           <Section gap={0.5} alignItems="start">
             <Text color="text-05">
-              {`Any application using the token ${tokenToDelete.name} (${tokenToDelete.token_display}) will lose access to Onyx. This action cannot be undone.`}
+              {`Any application using the token ${tokenToDelete.name} (${tokenToDelete.token_display}) will lose access to BackOffice. This action cannot be undone.`}
             </Text>
             <Text color="text-05">
               Are you sure you want to revoke this token?
@@ -1886,7 +1886,7 @@ function FederatedConnectorCard({
         >
           <Section gap={0.5} alignItems="start">
             <Text color="text-05">
-              {`Onyx will no longer be able to access or search content from your ${sourceMetadata.displayName} account.`}
+              {`BackOffice will no longer be able to access or search content from your ${sourceMetadata.displayName} account.`}
             </Text>
             <Text color="text-05">
               {`You can still continue existing sessions referencing ${sourceMetadata.displayName} content.`}

@@ -20,13 +20,13 @@ export default function LoginScreen() {
 
   return (
     <AuthScreenShell
-      title="Welcome to Onyx"
+      title="Welcome to BackOffice"
       subtitle="Your open source AI platform for work"
       footer={
         <>
           {hasPassword ? (
             <AuthSwitchLink
-              prompt="New to Onyx?"
+              prompt="New to BackOffice?"
               actionLabel="Create an Account"
               onPress={() => router.replace("/(auth)/signup")}
             />

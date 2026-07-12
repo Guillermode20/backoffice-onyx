@@ -118,7 +118,7 @@ def validate_user_role_update(
             status_code=400,
             detail=(
                 "A user cannot be set to a Slack User role. "
-                "This role is automatically assigned to users who only use Onyx via Slack."
+                "This role is automatically assigned to users who only use BackOffice via Slack."
             ),
         )
 

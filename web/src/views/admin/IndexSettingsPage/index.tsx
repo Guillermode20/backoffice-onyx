@@ -93,7 +93,7 @@ const route = ADMIN_ROUTES.INDEX_SETTINGS;
 
 const MODEL_TAB_CLOUD = "cloud-based";
 const MODEL_TAB_SELF = "self-hosted";
-const CLOUD_TOOLTIP = "This setting is managed by Onyx Cloud.";
+const CLOUD_TOOLTIP = "This setting is managed by BackOffice Cloud.";
 
 /**
  * Wrapper that disables its children when either:
@@ -1056,7 +1056,7 @@ export default function IndexSettingsPage() {
                   >
                     <Content
                       title="Embedding Model"
-                      description="Onyx uses this model to encode documents for search and retrieval."
+                      description="BackOffice uses this model to encode documents for search and retrieval."
                       sizePreset="main-content"
                       variant="section"
                     />
@@ -1067,7 +1067,7 @@ export default function IndexSettingsPage() {
                           <GeneralLayouts.Section padding={0.5}>
                             <Content
                               icon={SvgVector}
-                              title="Embedding model and settings are managed by Onyx Cloud."
+                              title="Embedding model and settings are managed by BackOffice Cloud."
                               sizePreset="main-ui"
                               variant="section"
                             />

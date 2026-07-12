@@ -26,7 +26,7 @@ function metadataRows(
 ): { label: string; value: string }[] {
   const rows: { label: string; value: string }[] = [];
   if (preview.source === "builtin") {
-    rows.push({ label: "Created by", value: "Onyx" });
+    rows.push({ label: "Created by", value: "BackOffice" });
   } else if (preview.author_email) {
     rows.push({ label: "Created by", value: preview.author_email });
   }

@@ -96,7 +96,7 @@ export default function NonAdminStep() {
           <InputHorizontal
             responsive
             icon={SvgUser}
-            title="What should Onyx call you?"
+            title="What should BackOffice call you?"
             description="We will display this name in the app."
           >
             <div className="flex w-full items-center gap-2">

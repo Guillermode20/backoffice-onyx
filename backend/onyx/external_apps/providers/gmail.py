@@ -157,7 +157,7 @@ class GmailProvider(GoogleOAuthProvider, OnyxManagedExtApp):
         upstream_url_patterns=["https://gmail\\.googleapis\\.com/gmail/.*"],
         description=(
             "Read, search, send, and draft email from your Gmail account inside "
-            "Onyx Craft."
+            "BackOffice Craft."
         ),
         google_api_name="Gmail API",
         endpoint_catalog=_ENDPOINTS,

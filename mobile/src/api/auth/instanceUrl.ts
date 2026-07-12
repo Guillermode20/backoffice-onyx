@@ -11,7 +11,7 @@ const PROBE_TIMEOUT_MS = 10_000;
 export function normalizeServerUrl(input: string): string {
   const trimmed = input.trim();
   if (trimmed.length === 0) {
-    throw new Error("Enter your Onyx instance URL.");
+    throw new Error("Enter your BackOffice instance URL.");
   }
   const withScheme = /^https?:\/\//i.test(trimmed)
     ? trimmed
@@ -28,7 +28,7 @@ export function normalizeServerUrl(input: string): string {
   return `${url.origin}${url.pathname}`.replace(/\/+$/, "");
 }
 
-// Reject non-Onyx responses (captive portal, HTML error page) so we don't commit a dead URL.
+// Reject non-BackOffice responses (captive portal, HTML error page) so we don't commit a dead URL.
 function isAuthTypeMetadata(value: unknown): value is AuthTypeMetadata {
   return (
     typeof value === "object" &&
@@ -50,13 +50,13 @@ export async function probeAuthType(
       signal: controller.signal,
     });
   } catch {
-    throw new Error("Couldn't reach an Onyx instance at that address.");
+    throw new Error("Couldn't reach a BackOffice instance at that address.");
   } finally {
     clearTimeout(timeout);
   }
 
   if (!res.ok) {
-    throw new Error("Couldn't reach an Onyx instance at that address.");
+    throw new Error("Couldn't reach a BackOffice instance at that address.");
   }
 
   let body: unknown;
@@ -66,7 +66,7 @@ export async function probeAuthType(
     body = undefined;
   }
   if (!isAuthTypeMetadata(body)) {
-    throw new Error("That address doesn't look like an Onyx instance.");
+    throw new Error("That address doesn't look like a BackOffice instance.");
   }
   return body;
 }

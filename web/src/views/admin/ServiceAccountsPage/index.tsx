@@ -250,7 +250,7 @@ export default function ServiceAccountsPage() {
         <SettingsLayouts.Header
           title={route.title}
           icon={route.icon}
-          description="Use service accounts to programmatically access Onyx API."
+          description="Use service accounts to programmatically access BackOffice API."
           divider
         />
         <SettingsLayouts.Body>
@@ -270,7 +270,7 @@ export default function ServiceAccountsPage() {
         <SettingsLayouts.Header
           title={route.title}
           icon={route.icon}
-          description="Use service accounts to programmatically access Onyx API."
+          description="Use service accounts to programmatically access BackOffice API."
           divider
         />
         <SettingsLayouts.Body>
@@ -287,7 +287,7 @@ export default function ServiceAccountsPage() {
       <SettingsLayouts.Header
         title={route.title}
         icon={route.icon}
-        description="Use service accounts to programmatically access Onyx API."
+        description="Use service accounts to programmatically access BackOffice API."
         divider
       />
 
@@ -350,7 +350,7 @@ export default function ServiceAccountsPage() {
                     const url = URL.createObjectURL(blob);
                     const a = document.createElement("a");
                     a.href = url;
-                    a.download = "onyx-api-key.txt";
+                    a.download = "backoffice-api-key.txt";
                     a.click();
                     URL.revokeObjectURL(url);
                   }}
@@ -452,7 +452,7 @@ export default function ServiceAccountsPage() {
                   deleteTarget.api_key_name || "Unnamed"
                 }* (\`${
                   deleteTarget.api_key_display
-                }\`) will lose access to Onyx.`
+                }\`) will lose access to BackOffice.`
               )}
             </Text>
             <Text as="p" color="text-03">
