@@ -178,7 +178,7 @@ jobs:
           password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Build and push Web Docker image
-        uses: docker/build-push-action@f9f3042f7e2789586610d6e8b85c8f03e5195baf
+        uses: docker/build-push-action@c3c9e263c25d99ce0380d002d59b67737d91b0dc
         with:
           context: ./web
           file: ./web/Dockerfile
@@ -240,7 +240,7 @@ jobs:
           ecr-registry: ${{ vars.ECR_REGISTRY }}
 
       - name: Build and push Backend Docker image
-        uses: docker/build-push-action@f9f3042f7e2789586610d6e8b85c8f03e5195baf
+        uses: docker/build-push-action@c3c9e263c25d99ce0380d002d59b67737d91b0dc
         with:
           context: ./backend
           file: ./backend/Dockerfile
